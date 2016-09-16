@@ -70,7 +70,6 @@ class ProfilesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def profile_params
-<<<<<<< HEAD
       params.require(:profile).permit(:name,
                                       :email,
                                       :github,
@@ -87,8 +86,5 @@ class ProfilesController < ApplicationController
                                         :date_start,
                                         :date_end
                                       ])
-=======
-      params.require(:profile).permit(:name, :email, :github, :bio, skills_attributes: [:id, :name, :year])
->>>>>>> 706b46abaa1cb6db0663d27b927481aae9d66e32
     end
 end
