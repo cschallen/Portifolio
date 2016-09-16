@@ -1,0 +1,100 @@
+// Place all the styles related to the Profiles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+ul {
+  list-style-type: none;
+}
+
+th {
+  border-bottom: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.background-profile-tittle{
+  border: outset;
+  color: white;
+  padding: 1px;
+  background-color: black;
+}
+
+.main-title-profile {
+  font-size: 5em;
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+}
+
+.titles-profile {
+  color: #660000;
+  font-size: 5em;
+  font-family: 'Indie Flower', cursive;
+}
+
+.image-profile {
+  border: outside;
+  float: right;
+  border-radius: 100%;
+  overflow: hidden;
+
+  & img {
+    width: 100%;
+  }
+}
+
+.skills-profile {
+  position: absolute;
+  left: 445px;
+  width: 300px;
+  height: 290px;
+  border: outset;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.jobs-profile {
+  position: absolute;
+  left: 100px;
+  width: 300px;
+  height: 290px;
+  border: outset;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.infos{
+  margin: 66px;
+}
+.bio {
+  padding: 20px;
+  width: 70%;
+  border: outset;
+  text-align: justify;
+}
+
+.first {
+  border: solid black 2px;
+}
+
+.paint-titles{
+  padding: 1px 0 1px 28px;
+  margin: 0px;
+  background-color: black;
+}
+
+.description-jobs {
+  padding-top: 15px;
+}
+
+.titles-attribute {
+  font-size: 2.5em;
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+}
+
+.format-box {
+  border: solid black 2px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}

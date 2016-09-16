@@ -1,0 +1,81 @@
+<p id="notice"><%= notice %></p>
+
+<div class="image-profile">
+  <td><%= image_tag @profile.avatar.url(:medium) %> </td>
+</div>
+
+<div class="first">
+  <div class="background-profile-tittle">
+    <h1 class="main-title-profile"><%= @profile.name %></h1>
+  </div>
+
+  <td><b>Email: </b> <%= @profile.email %></td><br>
+  <td><b>Github:</b> <%= @profile.github %></td><br>
+</div>
+
+<hr>
+
+<div class="infos bio">
+  <td>
+    <div>
+      <h1 class="titles-profile">Bio:</h1>
+    </div>
+    <%= @profile.bio %>
+  </td>
+
+</div>
+
+<div class="format-box">
+  <div class="background-profile-tittle">
+    <h1 class="titles-attribute">Jobs: </h1>
+  </div>
+  <div class="description-jobs">
+    <% @profile.jobs.each do |job|  %>
+    <ul>
+      <li><%= job.name %> | <%= job.description %></li>
+      <li><%= image_tag job.imag.url(:medium) %> </li>
+    </ul>
+    <% end %>
+  </div>
+</div>
+
+<div class="format-box">
+  <div class="background-profile-tittle">
+    <h1 class="titles-attribute">Skills:</h1>
+  </div>
+  <% @profile.skills.each do |skill|  %>
+  <ul>
+    <li><b><%= skill.name %></b> | <%= skill.year %> anos </li>
+  </ul>
+  <% end %>
+</div>
+
+
+
+
+<!--
+
+<div class="skills-profile">
+<ul>
+<div>
+<h1 class="titles-profile">Skills</h1>
+</div>
+
+<% @profile.skills.each do |skill|  %>
+<li><%= skill.name %> | <%= skill.year %> anos </li>
+<% end %>
+</ul>
+</div>
+
+<div class="jobs-profile">
+<ul>
+<div>
+<h1 class="titles-profile"> Jobs </h1>
+</div>
+<div class="description-jobs">
+<% @profile.jobs.each do |job|  %>
+<li><%= job.name %> | <%= job.description %></li>
+<% end %>
+</div>
+</ul>
+</div> -->
