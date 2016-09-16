@@ -10,6 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20160915185750) do
 
   create_table "jobs", force: :cascade do |t|
@@ -21,6 +22,9 @@ ActiveRecord::Schema.define(version: 20160915185750) do
     t.datetime "updated_at",  null: false
     t.integer  "profile_id"
   end
+=======
+ActiveRecord::Schema.define(version: 20160915161833) do
+>>>>>>> 706b46abaa1cb6db0663d27b927481aae9d66e32
 
   create_table "profiles", force: :cascade do |t|
     t.string   "name"
